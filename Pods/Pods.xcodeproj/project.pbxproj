@@ -1,0 +1,1053 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C23B11A92C3D645096A2ADC5B6048A5 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 30A198278EECD8DD19FE74B58EF52890 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		225A6B63133AD67A61101E52C754BED2 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8EEB536D1035A853385E5C2E5B7649E5 /* SVProgressHUD.bundle */; };
+		23BBE74782D6F8138D672F2D175811F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9B144C23E52A3DD40A4E812068890C7 /* Images.xcassets */; };
+		3AF146C28F793602FBC940A75C12829D /* LocationSearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FC0D89A9A1D9FC1B323EBA5079D4AA /* LocationSearchResultsViewController.swift */; };
+		466F2EE990DA103BBF927CC5DBB1DBB3 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11E315DA1B2C82D99436562F7360675 /* Location.swift */; };
+		5565D9C3A02006A3ABF61794C804A830 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE13FEDA06644493D55FA5A86F28465 /* SVProgressHUD.m */; };
+		592F9B96792AE9101C04CB1F52864A20 /* SearchHistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95E306FDF7891009B2807EF49384B74 /* SearchHistoryManager.swift */; };
+		6C9CB00851C61FA3128B8C2AB6ECEA59 /* SVProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CFE07CFF99426C344271355300171E /* SVProgressHUD-dummy.m */; };
+		6F7C6B52689036B521EC382E036E8105 /* LocationPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E146BAE118574B78857D377CBCDBEE /* LocationPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71CF232BAC0276DF800118EFA60CE680 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5FD7D1104982DA0F022B5757FB41D3E /* Foundation.framework */; };
+		7AEDB1357219CB9B5F3D8529233E3D8C /* DLLocalNotifications-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CF980B45CB185348FF0CCDA55869C58 /* DLLocalNotifications-dummy.m */; };
+		7C7ADAD299C94AFFB8BD79BC02ADE4B4 /* SVProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E25FC219C0E849E15F82F5132D0AC4B9 /* SVProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E45CC500516AE9F66922884D304807C /* LocationPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BAE8F91D785749099E18F06189D1A7 /* LocationPickerViewController.swift */; };
+		8239353BD6FB6BA47DC1C3B8B24C45AD /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B45879B769707D197E07D9F2C95D8B /* SVIndefiniteAnimatedView.m */; };
+		8489D5C5A0D70A6A24090D42FE47A8F9 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 512DE4D30A586480F97C51C03861A0F1 /* SVRadialGradientLayer.m */; };
+		870AD2E3BE7F76BDEF33B1B211C00FB5 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A1C4C53F57F37B13B685A7288B4250E /* SVIndefiniteAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E5F24CAF4317D24C4628F799FA2E391 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D4C7B1F4AD80C02F6A07939159B99B9 /* SVRadialGradientLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A28033B1EAB0BFF31A9F6A370E81D269 /* LocationPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0923615A8416DA73E66B9225ADC39A48 /* LocationPicker-dummy.m */; };
+		A773DD7B20AB03474A320BE5149E49E7 /* DLLocalNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B69020827F688DA7708A2D9B35CD77 /* DLLocalNotifications.swift */; };
+		B2650DDCE26A55287332C16DC340A89E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5FD7D1104982DA0F022B5757FB41D3E /* Foundation.framework */; };
+		BB9882B4072937C36E607B5E992F6A66 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 19A17ED9591C4686FBEB1A794C683DB2 /* SVProgressAnimatedView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0656D64349428E9BAC8B3F6377EE861 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5FD7D1104982DA0F022B5757FB41D3E /* Foundation.framework */; };
+		D745163BED2DFB2DD23267253689A987 /* DLLocalNotifications-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C133430239F48BD18046A0A1B1F6C801 /* DLLocalNotifications-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D77EF6E8C75E49CB0BFDEE2D96C3CE21 /* Pods-LocaAlarm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A26A50916C1E48511C95D77EDFCE4F15 /* Pods-LocaAlarm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC6662950DD9455C982F44E8788B80AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5FD7D1104982DA0F022B5757FB41D3E /* Foundation.framework */; };
+		E1BA87253667A4A195DE39FFEE73E0A5 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D5A3952383C1CC01851F19338DED17 /* SVProgressAnimatedView.m */; };
+		E8BFBAC92331FE0818DC7F05DAB52015 /* Pods-LocaAlarm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 707080D34773E31686C6E08DD33BC88C /* Pods-LocaAlarm-dummy.m */; };
+		F9F175564CB0AFC9D73AB9B9B7C39558 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F03D525EBD2B1B2D3C9A3A61589ABA5A /* QuartzCore.framework */; };
+		FE25ADF4E71B62D1C26E123542767818 /* DLLocalNotifications.h in Headers */ = {isa = PBXBuildFile; fileRef = 97BA64745C27B1D18566E38ECDE3B6F3 /* DLLocalNotifications.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF5D9916E40A9005040BC0B5B0FD1853 /* LocationPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A63973A7E958CF790A4CD7FF136E0647 /* LocationPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42E15233A80FACEE98E4C0B0ECC5B2B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFA6ED54ECC78BDD1207D17990EDB4DA;
+			remoteInfo = LocationPicker;
+		};
+		641A0DECF9E501228545F1B2128E96F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 544111D977C70ABE05477360D47D09AD;
+			remoteInfo = DLLocalNotifications;
+		};
+		FB9BC05C2BC3E7A8A048987E62908722 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF558D0BF89976563DAEF9528AA9592E;
+			remoteInfo = SVProgressHUD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		014EFC609A76AF1AC3DC6D8A6314090E /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SVProgressHUD.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04CFE07CFF99426C344271355300171E /* SVProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SVProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		08BAE8F91D785749099E18F06189D1A7 /* LocationPickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationPickerViewController.swift; path = LocationPicker/LocationPickerViewController.swift; sourceTree = "<group>"; };
+		0923615A8416DA73E66B9225ADC39A48 /* LocationPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LocationPicker-dummy.m"; sourceTree = "<group>"; };
+		11AFC7316B815ED499EA1405CA57652C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19A17ED9591C4686FBEB1A794C683DB2 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressAnimatedView.h; path = SVProgressHUD/SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		1D4C7B1F4AD80C02F6A07939159B99B9 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVRadialGradientLayer.h; path = SVProgressHUD/SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		23292B291F9306049BA7469646D52671 /* Pods-LocaAlarm-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocaAlarm-frameworks.sh"; sourceTree = "<group>"; };
+		23D5A3952383C1CC01851F19338DED17 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressAnimatedView.m; path = SVProgressHUD/SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		274113C374B7B2048E0CB7AE1BD9BA76 /* DLLocalNotifications.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DLLocalNotifications.framework; path = DLLocalNotifications.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27A802C68BF04D97256BD1B9BB6A544A /* Pods-LocaAlarm-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LocaAlarm-acknowledgements.plist"; sourceTree = "<group>"; };
+		29B45879B769707D197E07D9F2C95D8B /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVIndefiniteAnimatedView.m; path = SVProgressHUD/SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		30A198278EECD8DD19FE74B58EF52890 /* SVProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVProgressHUD.h; path = SVProgressHUD/SVProgressHUD.h; sourceTree = "<group>"; };
+		3CF980B45CB185348FF0CCDA55869C58 /* DLLocalNotifications-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DLLocalNotifications-dummy.m"; sourceTree = "<group>"; };
+		455A2715EC0F250E48BEBAEEF18C352C /* Pods-LocaAlarm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LocaAlarm.modulemap"; sourceTree = "<group>"; };
+		512DE4D30A586480F97C51C03861A0F1 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVRadialGradientLayer.m; path = SVProgressHUD/SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		5A1C4C53F57F37B13B685A7288B4250E /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SVIndefiniteAnimatedView.h; path = SVProgressHUD/SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		600F71AAD4B90FD72CBF9A529B208387 /* Pods-LocaAlarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocaAlarm.release.xcconfig"; sourceTree = "<group>"; };
+		6F3467B749CE4B0D24B3416B437025F2 /* SVProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		6F78F2A55603BE0428C4C152C7753170 /* LocationPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LocationPicker.framework; path = LocationPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		704E6583F11C850BD6FBF4A91E690BB1 /* DLLocalNotifications.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DLLocalNotifications.xcconfig; sourceTree = "<group>"; };
+		707080D34773E31686C6E08DD33BC88C /* Pods-LocaAlarm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LocaAlarm-dummy.m"; sourceTree = "<group>"; };
+		73283818307590A3A250572D66A22CE8 /* LocationPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LocationPicker-prefix.pch"; sourceTree = "<group>"; };
+		7763E2ADE18C0B35134ACB39B4290EFC /* Pods_LocaAlarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LocaAlarm.framework; path = "Pods-LocaAlarm.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78E146BAE118574B78857D377CBCDBEE /* LocationPicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LocationPicker.h; path = LocationPicker/LocationPicker.h; sourceTree = "<group>"; };
+		797BBBA2BF2800A5DF8270E1F0E019B8 /* SVProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SVProgressHUD.xcconfig; sourceTree = "<group>"; };
+		8EEB536D1035A853385E5C2E5B7649E5 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SVProgressHUD.bundle; path = SVProgressHUD/SVProgressHUD.bundle; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93BC6BF3A59531524370D0832D189EA3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95946946624324AAAF2AE3E5443F120E /* DLLocalNotifications-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLLocalNotifications-prefix.pch"; sourceTree = "<group>"; };
+		97BA64745C27B1D18566E38ECDE3B6F3 /* DLLocalNotifications.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DLLocalNotifications.h; path = DLLocalNotifications/DLLocalNotifications.h; sourceTree = "<group>"; };
+		A26A50916C1E48511C95D77EDFCE4F15 /* Pods-LocaAlarm-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LocaAlarm-umbrella.h"; sourceTree = "<group>"; };
+		A4C34764BD09F41F4AD4AF49B900ABC3 /* Pods-LocaAlarm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LocaAlarm.debug.xcconfig"; sourceTree = "<group>"; };
+		A552CAE3B6CA97F72F8C21952B49BD20 /* LocationPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LocationPicker.xcconfig; sourceTree = "<group>"; };
+		A63973A7E958CF790A4CD7FF136E0647 /* LocationPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LocationPicker-umbrella.h"; sourceTree = "<group>"; };
+		A9B144C23E52A3DD40A4E812068890C7 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = LocationPicker/Images.xcassets; sourceTree = "<group>"; };
+		B596DFB252593B3E90AC721D6A25ACC4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B95E306FDF7891009B2807EF49384B74 /* SearchHistoryManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchHistoryManager.swift; path = LocationPicker/SearchHistoryManager.swift; sourceTree = "<group>"; };
+		C133430239F48BD18046A0A1B1F6C801 /* DLLocalNotifications-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLLocalNotifications-umbrella.h"; sourceTree = "<group>"; };
+		C54913E6D6885B9AADCF8BCB66D5B657 /* LocationPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LocationPicker.modulemap; sourceTree = "<group>"; };
+		C9B69020827F688DA7708A2D9B35CD77 /* DLLocalNotifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DLLocalNotifications.swift; path = DLLocalNotifications/DLLocalNotifications.swift; sourceTree = "<group>"; };
+		CB14D13262265A13AF32B2CE1B8ACBC3 /* SVProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SVProgressHUD.modulemap; sourceTree = "<group>"; };
+		CC54C95DA544B1143974975A361D6488 /* Pods-LocaAlarm-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LocaAlarm-resources.sh"; sourceTree = "<group>"; };
+		D11E315DA1B2C82D99436562F7360675 /* Location.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Location.swift; path = LocationPicker/Location.swift; sourceTree = "<group>"; };
+		D1FC0D89A9A1D9FC1B323EBA5079D4AA /* LocationSearchResultsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocationSearchResultsViewController.swift; path = LocationPicker/LocationSearchResultsViewController.swift; sourceTree = "<group>"; };
+		DFE13FEDA06644493D55FA5A86F28465 /* SVProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SVProgressHUD.m; path = SVProgressHUD/SVProgressHUD.m; sourceTree = "<group>"; };
+		E25FC219C0E849E15F82F5132D0AC4B9 /* SVProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		E5FD7D1104982DA0F022B5757FB41D3E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E9ABB6AEE9A6E5F9128084B21064506E /* Pods-LocaAlarm-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LocaAlarm-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F03D525EBD2B1B2D3C9A3A61589ABA5A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		F560839D7DF66259109677CCA7F2F8DD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8D98B884028352C969EE0394B6E28FB /* DLLocalNotifications.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DLLocalNotifications.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08C07FFEC56145D22554F4E6FA435925 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71CF232BAC0276DF800118EFA60CE680 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58A305B91BC9F1CC89941C531FFD72AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2650DDCE26A55287332C16DC340A89E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B3196A105E0B823499CB1AD103F3A74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0656D64349428E9BAC8B3F6377EE861 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5957FF309EE79704FFD8B46DDC18262 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC6662950DD9455C982F44E8788B80AE /* Foundation.framework in Frameworks */,
+				F9F175564CB0AFC9D73AB9B9B7C39558 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		054A3845A4BD3F91C4E80A67EE5DCD91 /* DLLocalNotifications */ = {
+			isa = PBXGroup;
+			children = (
+				97BA64745C27B1D18566E38ECDE3B6F3 /* DLLocalNotifications.h */,
+				C9B69020827F688DA7708A2D9B35CD77 /* DLLocalNotifications.swift */,
+				228D0CF359A6C03474D84DD1A10FFA8E /* Support Files */,
+			);
+			name = DLLocalNotifications;
+			path = DLLocalNotifications;
+			sourceTree = "<group>";
+		};
+		21551BE1CC1D9D261C0EFE8500E5D29A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2C09253971893A41E809ACCBCB34FD5 /* Pods-LocaAlarm */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		228D0CF359A6C03474D84DD1A10FFA8E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8D98B884028352C969EE0394B6E28FB /* DLLocalNotifications.modulemap */,
+				704E6583F11C850BD6FBF4A91E690BB1 /* DLLocalNotifications.xcconfig */,
+				3CF980B45CB185348FF0CCDA55869C58 /* DLLocalNotifications-dummy.m */,
+				95946946624324AAAF2AE3E5443F120E /* DLLocalNotifications-prefix.pch */,
+				C133430239F48BD18046A0A1B1F6C801 /* DLLocalNotifications-umbrella.h */,
+				F560839D7DF66259109677CCA7F2F8DD /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DLLocalNotifications";
+			sourceTree = "<group>";
+		};
+		25F9DDC74F915546BBA9E0E9C166F517 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B596DFB252593B3E90AC721D6A25ACC4 /* Info.plist */,
+				C54913E6D6885B9AADCF8BCB66D5B657 /* LocationPicker.modulemap */,
+				A552CAE3B6CA97F72F8C21952B49BD20 /* LocationPicker.xcconfig */,
+				0923615A8416DA73E66B9225ADC39A48 /* LocationPicker-dummy.m */,
+				73283818307590A3A250572D66A22CE8 /* LocationPicker-prefix.pch */,
+				A63973A7E958CF790A4CD7FF136E0647 /* LocationPicker-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LocationPicker";
+			sourceTree = "<group>";
+		};
+		34151D07CE3DC917267D7709B97A7004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				274113C374B7B2048E0CB7AE1BD9BA76 /* DLLocalNotifications.framework */,
+				6F78F2A55603BE0428C4C152C7753170 /* LocationPicker.framework */,
+				7763E2ADE18C0B35134ACB39B4290EFC /* Pods_LocaAlarm.framework */,
+				014EFC609A76AF1AC3DC6D8A6314090E /* SVProgressHUD.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B77A7A05442780EC92DC1750CA2454E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		69801CEF045D91671AB6976AE836DD85 /* LocationPicker */ = {
+			isa = PBXGroup;
+			children = (
+				D11E315DA1B2C82D99436562F7360675 /* Location.swift */,
+				78E146BAE118574B78857D377CBCDBEE /* LocationPicker.h */,
+				08BAE8F91D785749099E18F06189D1A7 /* LocationPickerViewController.swift */,
+				D1FC0D89A9A1D9FC1B323EBA5079D4AA /* LocationSearchResultsViewController.swift */,
+				B95E306FDF7891009B2807EF49384B74 /* SearchHistoryManager.swift */,
+				924EF14F3B14B49EC236DF8B336044D8 /* Resources */,
+				25F9DDC74F915546BBA9E0E9C166F517 /* Support Files */,
+			);
+			name = LocationPicker;
+			path = LocationPicker;
+			sourceTree = "<group>";
+		};
+		7B77A7A05442780EC92DC1750CA2454E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E5FD7D1104982DA0F022B5757FB41D3E /* Foundation.framework */,
+				F03D525EBD2B1B2D3C9A3A61589ABA5A /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				A9AE20C9B60C4BFE22372F5EA39CB17E /* Pods */,
+				34151D07CE3DC917267D7709B97A7004 /* Products */,
+				21551BE1CC1D9D261C0EFE8500E5D29A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8266C2DF8A2A81714D22AFA8504A18F5 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				5A1C4C53F57F37B13B685A7288B4250E /* SVIndefiniteAnimatedView.h */,
+				29B45879B769707D197E07D9F2C95D8B /* SVIndefiniteAnimatedView.m */,
+				19A17ED9591C4686FBEB1A794C683DB2 /* SVProgressAnimatedView.h */,
+				23D5A3952383C1CC01851F19338DED17 /* SVProgressAnimatedView.m */,
+				30A198278EECD8DD19FE74B58EF52890 /* SVProgressHUD.h */,
+				DFE13FEDA06644493D55FA5A86F28465 /* SVProgressHUD.m */,
+				1D4C7B1F4AD80C02F6A07939159B99B9 /* SVRadialGradientLayer.h */,
+				512DE4D30A586480F97C51C03861A0F1 /* SVRadialGradientLayer.m */,
+				B8ECBFBE0E66FCD2F69B0CE50570AF78 /* Resources */,
+				83DCC6D4294D4FD94F123DA22C62BC70 /* Support Files */,
+			);
+			name = SVProgressHUD;
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		83DCC6D4294D4FD94F123DA22C62BC70 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				11AFC7316B815ED499EA1405CA57652C /* Info.plist */,
+				CB14D13262265A13AF32B2CE1B8ACBC3 /* SVProgressHUD.modulemap */,
+				797BBBA2BF2800A5DF8270E1F0E019B8 /* SVProgressHUD.xcconfig */,
+				04CFE07CFF99426C344271355300171E /* SVProgressHUD-dummy.m */,
+				6F3467B749CE4B0D24B3416B437025F2 /* SVProgressHUD-prefix.pch */,
+				E25FC219C0E849E15F82F5132D0AC4B9 /* SVProgressHUD-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SVProgressHUD";
+			sourceTree = "<group>";
+		};
+		924EF14F3B14B49EC236DF8B336044D8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A9B144C23E52A3DD40A4E812068890C7 /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A9AE20C9B60C4BFE22372F5EA39CB17E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				054A3845A4BD3F91C4E80A67EE5DCD91 /* DLLocalNotifications */,
+				69801CEF045D91671AB6976AE836DD85 /* LocationPicker */,
+				8266C2DF8A2A81714D22AFA8504A18F5 /* SVProgressHUD */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B8ECBFBE0E66FCD2F69B0CE50570AF78 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8EEB536D1035A853385E5C2E5B7649E5 /* SVProgressHUD.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D2C09253971893A41E809ACCBCB34FD5 /* Pods-LocaAlarm */ = {
+			isa = PBXGroup;
+			children = (
+				93BC6BF3A59531524370D0832D189EA3 /* Info.plist */,
+				455A2715EC0F250E48BEBAEEF18C352C /* Pods-LocaAlarm.modulemap */,
+				E9ABB6AEE9A6E5F9128084B21064506E /* Pods-LocaAlarm-acknowledgements.markdown */,
+				27A802C68BF04D97256BD1B9BB6A544A /* Pods-LocaAlarm-acknowledgements.plist */,
+				707080D34773E31686C6E08DD33BC88C /* Pods-LocaAlarm-dummy.m */,
+				23292B291F9306049BA7469646D52671 /* Pods-LocaAlarm-frameworks.sh */,
+				CC54C95DA544B1143974975A361D6488 /* Pods-LocaAlarm-resources.sh */,
+				A26A50916C1E48511C95D77EDFCE4F15 /* Pods-LocaAlarm-umbrella.h */,
+				A4C34764BD09F41F4AD4AF49B900ABC3 /* Pods-LocaAlarm.debug.xcconfig */,
+				600F71AAD4B90FD72CBF9A529B208387 /* Pods-LocaAlarm.release.xcconfig */,
+			);
+			name = "Pods-LocaAlarm";
+			path = "Target Support Files/Pods-LocaAlarm";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		03FA0FD8C179B7AFB293C8A11DC188AB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D77EF6E8C75E49CB0BFDEE2D96C3CE21 /* Pods-LocaAlarm-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36DD07F03EF6D3002CDA8DDE7531F7C9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				870AD2E3BE7F76BDEF33B1B211C00FB5 /* SVIndefiniteAnimatedView.h in Headers */,
+				BB9882B4072937C36E607B5E992F6A66 /* SVProgressAnimatedView.h in Headers */,
+				7C7ADAD299C94AFFB8BD79BC02ADE4B4 /* SVProgressHUD-umbrella.h in Headers */,
+				1C23B11A92C3D645096A2ADC5B6048A5 /* SVProgressHUD.h in Headers */,
+				8E5F24CAF4317D24C4628F799FA2E391 /* SVRadialGradientLayer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7395E843504420BF4D093EEA0229C5C2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF5D9916E40A9005040BC0B5B0FD1853 /* LocationPicker-umbrella.h in Headers */,
+				6F7C6B52689036B521EC382E036E8105 /* LocationPicker.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A58047F6FD366BC07D9DA85F4AA2B963 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D745163BED2DFB2DD23267253689A987 /* DLLocalNotifications-umbrella.h in Headers */,
+				FE25ADF4E71B62D1C26E123542767818 /* DLLocalNotifications.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		544111D977C70ABE05477360D47D09AD /* DLLocalNotifications */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC765CED1F4C92ED86B6BEA26CAA7F2D /* Build configuration list for PBXNativeTarget "DLLocalNotifications" */;
+			buildPhases = (
+				A58047F6FD366BC07D9DA85F4AA2B963 /* Headers */,
+				62A0FB0FAE296EB5CE61DC57D690B213 /* Sources */,
+				08C07FFEC56145D22554F4E6FA435925 /* Frameworks */,
+				B5450F31E7EA054717A8FDD745748361 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DLLocalNotifications;
+			productName = DLLocalNotifications;
+			productReference = 274113C374B7B2048E0CB7AE1BD9BA76 /* DLLocalNotifications.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		95FCB4E3D826BF1A8F112A39131ED12E /* Pods-LocaAlarm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BACABA7C3261DE4E06F237097B751084 /* Build configuration list for PBXNativeTarget "Pods-LocaAlarm" */;
+			buildPhases = (
+				03FA0FD8C179B7AFB293C8A11DC188AB /* Headers */,
+				3D624356DA6CB5E5BD7BC7F4BF559A3A /* Sources */,
+				58A305B91BC9F1CC89941C531FFD72AB /* Frameworks */,
+				2037E7D26FCADD251CDF5341655251FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58F8C1CD6C6D595A530E3573A932BAF4 /* PBXTargetDependency */,
+				385DF23A18D818D68C5A3A5A556ECDD2 /* PBXTargetDependency */,
+				2BEDC8ECD1B6036D2BA6E0D45CD8BE2F /* PBXTargetDependency */,
+			);
+			name = "Pods-LocaAlarm";
+			productName = "Pods-LocaAlarm";
+			productReference = 7763E2ADE18C0B35134ACB39B4290EFC /* Pods_LocaAlarm.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BF558D0BF89976563DAEF9528AA9592E /* SVProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF536EFFD4A2BC929DFD6D47F55EEDD2 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */;
+			buildPhases = (
+				36DD07F03EF6D3002CDA8DDE7531F7C9 /* Headers */,
+				F0BE2E4C7165172F5E5882BDF06818EB /* Sources */,
+				E5957FF309EE79704FFD8B46DDC18262 /* Frameworks */,
+				FE61B8EE8013DE969445F99F97D405B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SVProgressHUD;
+			productName = SVProgressHUD;
+			productReference = 014EFC609A76AF1AC3DC6D8A6314090E /* SVProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CFA6ED54ECC78BDD1207D17990EDB4DA /* LocationPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3BE00132CED645ED992463B756F7F25 /* Build configuration list for PBXNativeTarget "LocationPicker" */;
+			buildPhases = (
+				7395E843504420BF4D093EEA0229C5C2 /* Headers */,
+				EE556764A8BAE42D356C4D938FF38D3D /* Sources */,
+				8B3196A105E0B823499CB1AD103F3A74 /* Frameworks */,
+				E44A4FE3E0398BAB40643F045EB8FEAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LocationPicker;
+			productName = LocationPicker;
+			productReference = 6F78F2A55603BE0428C4C152C7753170 /* LocationPicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 34151D07CE3DC917267D7709B97A7004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				544111D977C70ABE05477360D47D09AD /* DLLocalNotifications */,
+				CFA6ED54ECC78BDD1207D17990EDB4DA /* LocationPicker */,
+				95FCB4E3D826BF1A8F112A39131ED12E /* Pods-LocaAlarm */,
+				BF558D0BF89976563DAEF9528AA9592E /* SVProgressHUD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2037E7D26FCADD251CDF5341655251FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5450F31E7EA054717A8FDD745748361 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E44A4FE3E0398BAB40643F045EB8FEAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23BBE74782D6F8138D672F2D175811F8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE61B8EE8013DE969445F99F97D405B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				225A6B63133AD67A61101E52C754BED2 /* SVProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D624356DA6CB5E5BD7BC7F4BF559A3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8BFBAC92331FE0818DC7F05DAB52015 /* Pods-LocaAlarm-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62A0FB0FAE296EB5CE61DC57D690B213 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AEDB1357219CB9B5F3D8529233E3D8C /* DLLocalNotifications-dummy.m in Sources */,
+				A773DD7B20AB03474A320BE5149E49E7 /* DLLocalNotifications.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE556764A8BAE42D356C4D938FF38D3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				466F2EE990DA103BBF927CC5DBB1DBB3 /* Location.swift in Sources */,
+				A28033B1EAB0BFF31A9F6A370E81D269 /* LocationPicker-dummy.m in Sources */,
+				7E45CC500516AE9F66922884D304807C /* LocationPickerViewController.swift in Sources */,
+				3AF146C28F793602FBC940A75C12829D /* LocationSearchResultsViewController.swift in Sources */,
+				592F9B96792AE9101C04CB1F52864A20 /* SearchHistoryManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0BE2E4C7165172F5E5882BDF06818EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8239353BD6FB6BA47DC1C3B8B24C45AD /* SVIndefiniteAnimatedView.m in Sources */,
+				E1BA87253667A4A195DE39FFEE73E0A5 /* SVProgressAnimatedView.m in Sources */,
+				6C9CB00851C61FA3128B8C2AB6ECEA59 /* SVProgressHUD-dummy.m in Sources */,
+				5565D9C3A02006A3ABF61794C804A830 /* SVProgressHUD.m in Sources */,
+				8489D5C5A0D70A6A24090D42FE47A8F9 /* SVRadialGradientLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2BEDC8ECD1B6036D2BA6E0D45CD8BE2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SVProgressHUD;
+			target = BF558D0BF89976563DAEF9528AA9592E /* SVProgressHUD */;
+			targetProxy = FB9BC05C2BC3E7A8A048987E62908722 /* PBXContainerItemProxy */;
+		};
+		385DF23A18D818D68C5A3A5A556ECDD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LocationPicker;
+			target = CFA6ED54ECC78BDD1207D17990EDB4DA /* LocationPicker */;
+			targetProxy = 42E15233A80FACEE98E4C0B0ECC5B2B5 /* PBXContainerItemProxy */;
+		};
+		58F8C1CD6C6D595A530E3573A932BAF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DLLocalNotifications;
+			target = 544111D977C70ABE05477360D47D09AD /* DLLocalNotifications */;
+			targetProxy = 641A0DECF9E501228545F1B2128E96F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3A5CF8B32E54B2EF7579B8E88F1845E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 704E6583F11C850BD6FBF4A91E690BB1 /* DLLocalNotifications.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DLLocalNotifications/DLLocalNotifications-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DLLocalNotifications/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DLLocalNotifications/DLLocalNotifications.modulemap";
+				PRODUCT_MODULE_NAME = DLLocalNotifications;
+				PRODUCT_NAME = DLLocalNotifications;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		46B7803AB629E7150E8E6CB8292FA258 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A552CAE3B6CA97F72F8C21952B49BD20 /* LocationPicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LocationPicker/LocationPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LocationPicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LocationPicker/LocationPicker.modulemap";
+				PRODUCT_MODULE_NAME = LocationPicker;
+				PRODUCT_NAME = LocationPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		483275E886D47E7F3B521B8356F84665 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 600F71AAD4B90FD72CBF9A529B208387 /* Pods-LocaAlarm.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LocaAlarm/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LocaAlarm/Pods-LocaAlarm.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7AD4B7C0EC4A5953916D896D202BD8A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 797BBBA2BF2800A5DF8270E1F0E019B8 /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = SVProgressHUD;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		88C1629442FD0C92F588050BE3BB83DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 797BBBA2BF2800A5DF8270E1F0E019B8 /* SVProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SVProgressHUD/SVProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SVProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SVProgressHUD/SVProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = SVProgressHUD;
+				PRODUCT_NAME = SVProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DDFA5FA8D4131BFD96E5E26F3672644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9199DDE2F035C8E1608E6D829F701385 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 704E6583F11C850BD6FBF4A91E690BB1 /* DLLocalNotifications.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DLLocalNotifications/DLLocalNotifications-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DLLocalNotifications/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DLLocalNotifications/DLLocalNotifications.modulemap";
+				PRODUCT_MODULE_NAME = DLLocalNotifications;
+				PRODUCT_NAME = DLLocalNotifications;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B06C7CB4631C3AF735D2928B47614820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A552CAE3B6CA97F72F8C21952B49BD20 /* LocationPicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LocationPicker/LocationPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LocationPicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LocationPicker/LocationPicker.modulemap";
+				PRODUCT_MODULE_NAME = LocationPicker;
+				PRODUCT_NAME = LocationPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D5F759C82752B2EB010DB3CD3D69707C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E6AFACA579BDF2EE2878E2F269A0D411 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4C34764BD09F41F4AD4AF49B900ABC3 /* Pods-LocaAlarm.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LocaAlarm/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LocaAlarm/Pods-LocaAlarm.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DDFA5FA8D4131BFD96E5E26F3672644 /* Debug */,
+				D5F759C82752B2EB010DB3CD3D69707C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3BE00132CED645ED992463B756F7F25 /* Build configuration list for PBXNativeTarget "LocationPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B06C7CB4631C3AF735D2928B47614820 /* Debug */,
+				46B7803AB629E7150E8E6CB8292FA258 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BACABA7C3261DE4E06F237097B751084 /* Build configuration list for PBXNativeTarget "Pods-LocaAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6AFACA579BDF2EE2878E2F269A0D411 /* Debug */,
+				483275E886D47E7F3B521B8356F84665 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF536EFFD4A2BC929DFD6D47F55EEDD2 /* Build configuration list for PBXNativeTarget "SVProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AD4B7C0EC4A5953916D896D202BD8A8 /* Debug */,
+				88C1629442FD0C92F588050BE3BB83DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC765CED1F4C92ED86B6BEA26CAA7F2D /* Build configuration list for PBXNativeTarget "DLLocalNotifications" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A5CF8B32E54B2EF7579B8E88F1845E6 /* Debug */,
+				9199DDE2F035C8E1608E6D829F701385 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_LocaAlarm {
+  umbrella header "Pods-LocaAlarm-umbrella.h"
+
+  export *
+  module * { export * }
+}

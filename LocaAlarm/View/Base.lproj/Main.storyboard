@@ -56,7 +56,79 @@
                     <view key="view" contentMode="scaleToFill" id="JDB-VD-dva">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="STG-7R-bFC">
+                                <rect key="frame" x="0.0" y="64" width="375" height="216"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uc7-PV-oGI">
+                                <rect key="frame" x="10" y="280" width="365" height="33"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="Reminder">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcn-aT-KcJ">
+                                <rect key="frame" x="10" y="313" width="365" height="33"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="Use Current Location">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIX-fW-9OK">
+                                <rect key="frame" x="359" y="319" width="16" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="TJj-OO-R5i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Button" image="selectcontact_btn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cgw-qF-5Iw">
+                                <rect key="frame" x="10" y="346" width="365" height="33"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="Set Location">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jm9-Cg-i28">
+                                <rect key="frame" x="359" y="286" width="16" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="NCO-XN-fvs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Button" image="selectcontact_btn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MmC-QM-vRn">
+                                <rect key="frame" x="359" y="352" width="16" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="1RT-4Z-3WE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Button" image="selectcontact_btn"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="STG-7R-bFC" firstAttribute="trailing" secondItem="o8U-cm-zic" secondAttribute="trailing" id="479-IG-duO"/>
+                            <constraint firstItem="STG-7R-bFC" firstAttribute="top" secondItem="o8U-cm-zic" secondAttribute="top" id="57e-IV-JFk"/>
+                            <constraint firstItem="MmC-QM-vRn" firstAttribute="top" secondItem="kcn-aT-KcJ" secondAttribute="bottom" constant="6" id="6A8-fy-GWz"/>
+                            <constraint firstItem="Cgw-qF-5Iw" firstAttribute="trailing" secondItem="o8U-cm-zic" secondAttribute="trailing" id="6Tx-Jx-fLJ"/>
+                            <constraint firstItem="Uc7-PV-oGI" firstAttribute="trailing" secondItem="o8U-cm-zic" secondAttribute="trailing" id="7wS-pM-cOJ"/>
+                            <constraint firstItem="Uc7-PV-oGI" firstAttribute="top" secondItem="STG-7R-bFC" secondAttribute="bottom" id="8QY-ro-vhA"/>
+                            <constraint firstItem="jm9-Cg-i28" firstAttribute="top" secondItem="STG-7R-bFC" secondAttribute="bottom" constant="6" id="91i-Um-uYn"/>
+                            <constraint firstItem="kcn-aT-KcJ" firstAttribute="top" secondItem="jm9-Cg-i28" secondAttribute="bottom" constant="6" id="AQe-aJ-5On"/>
+                            <constraint firstItem="Cgw-qF-5Iw" firstAttribute="top" secondItem="aIX-fW-9OK" secondAttribute="bottom" constant="6" id="FtP-VB-A8k"/>
+                            <constraint firstItem="kcn-aT-KcJ" firstAttribute="top" secondItem="Uc7-PV-oGI" secondAttribute="bottom" id="Oeo-xf-Yxp"/>
+                            <constraint firstItem="Cgw-qF-5Iw" firstAttribute="top" secondItem="kcn-aT-KcJ" secondAttribute="bottom" id="YaN-e7-ooi"/>
+                            <constraint firstItem="Cgw-qF-5Iw" firstAttribute="leading" secondItem="o8U-cm-zic" secondAttribute="leading" constant="10" id="eMH-K3-gql"/>
+                            <constraint firstItem="MmC-QM-vRn" firstAttribute="trailing" secondItem="o8U-cm-zic" secondAttribute="trailing" id="hPm-h4-1PR"/>
+                            <constraint firstItem="Uc7-PV-oGI" firstAttribute="leading" secondItem="o8U-cm-zic" secondAttribute="leading" constant="10" id="hci-TU-BsF"/>
+                            <constraint firstItem="STG-7R-bFC" firstAttribute="leading" secondItem="o8U-cm-zic" secondAttribute="leading" id="hgz-OK-Wjq"/>
+                            <constraint firstItem="kcn-aT-KcJ" firstAttribute="leading" secondItem="o8U-cm-zic" secondAttribute="leading" constant="10" id="hyt-jl-ArU"/>
+                            <constraint firstItem="aIX-fW-9OK" firstAttribute="top" secondItem="Uc7-PV-oGI" secondAttribute="bottom" constant="6" id="i0x-kp-CgN"/>
+                            <constraint firstItem="jm9-Cg-i28" firstAttribute="trailing" secondItem="o8U-cm-zic" secondAttribute="trailing" id="op0-9f-MiL"/>
+                            <constraint firstItem="kcn-aT-KcJ" firstAttribute="trailing" secondItem="o8U-cm-zic" secondAttribute="trailing" id="sbH-if-ME5"/>
+                            <constraint firstItem="aIX-fW-9OK" firstAttribute="trailing" secondItem="o8U-cm-zic" secondAttribute="trailing" id="uXC-1v-ZCM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="o8U-cm-zic"/>
                     </view>
                     <connections>
@@ -65,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8I7-r2-3VN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1753" y="126"/>
+            <point key="canvasLocation" x="1752.8" y="125.4872563718141"/>
         </scene>
         <!--ReminderViewController-->
         <scene sceneID="uRy-cH-4pS">
@@ -101,4 +173,7 @@
             <point key="canvasLocation" x="-78" y="125"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="selectcontact_btn" width="12" height="21"/>
+    </resources>
 </document>

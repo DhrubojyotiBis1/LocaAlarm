@@ -15,7 +15,7 @@ class AddViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         print("AddViewController")
-        performSegue(withIdentifier: "goToReminder", sender: self)
+        //performSegue(withIdentifier: "goToReminder", sender: self)
     }
     
 

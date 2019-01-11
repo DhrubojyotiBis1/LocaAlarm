@@ -1,0 +1,24 @@
+PODS:
+  - DLLocalNotifications (0.06)
+  - LocationPicker (1.2.0)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - DLLocalNotifications
+  - LocationPicker
+  - SVProgressHUD
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - DLLocalNotifications
+    - LocationPicker
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  DLLocalNotifications: 751d53da896bc396bb23d4d3570b7fd3c7654e4e
+  LocationPicker: d91f9fe50493d8058391fe1408aa2a8db49a584d
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 14d064cec5f02b2ecb33a7b0ece98a4e279313b6
+
+COCOAPODS: 1.5.3
