@@ -66,6 +66,9 @@
                                 <state key="normal" title="Reminder">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="reminderClicked:" destination="809-Ar-SpE" eventType="touchUpInside" id="xst-Zj-4Dg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcn-aT-KcJ">
                                 <rect key="frame" x="10" y="313" width="365" height="33"/>
@@ -73,6 +76,9 @@
                                 <state key="normal" title="Use Current Location">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="useCurrentLocationClicked:" destination="809-Ar-SpE" eventType="touchUpInside" id="4qd-a3-Z6c"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aIX-fW-9OK">
                                 <rect key="frame" x="359" y="319" width="16" height="21"/>
@@ -81,6 +87,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Button" image="selectcontact_btn"/>
+                                <connections>
+                                    <action selector="useCurrentLocationClicked:" destination="809-Ar-SpE" eventType="touchUpInside" id="1Od-Aa-uCc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cgw-qF-5Iw">
                                 <rect key="frame" x="10" y="346" width="365" height="33"/>
@@ -88,6 +97,9 @@
                                 <state key="normal" title="Set Location">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="setLocationClicked:" destination="809-Ar-SpE" eventType="touchUpInside" id="YWn-uy-Rdx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jm9-Cg-i28">
                                 <rect key="frame" x="359" y="286" width="16" height="21"/>
@@ -96,6 +108,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Button" image="selectcontact_btn"/>
+                                <connections>
+                                    <action selector="reminderClicked:" destination="809-Ar-SpE" eventType="touchUpInside" id="yqr-fM-tOQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MmC-QM-vRn">
                                 <rect key="frame" x="359" y="352" width="16" height="21"/>
@@ -104,7 +119,19 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Button" image="selectcontact_btn"/>
+                                <connections>
+                                    <action selector="setLocationClicked:" destination="809-Ar-SpE" eventType="touchUpInside" id="ckA-Y9-by1"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hxl-VS-cR5">
+                                <rect key="frame" x="10" y="64" width="365" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="EMW-58-lfh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -117,7 +144,9 @@
                             <constraint firstItem="jm9-Cg-i28" firstAttribute="top" secondItem="STG-7R-bFC" secondAttribute="bottom" constant="6" id="91i-Um-uYn"/>
                             <constraint firstItem="kcn-aT-KcJ" firstAttribute="top" secondItem="jm9-Cg-i28" secondAttribute="bottom" constant="6" id="AQe-aJ-5On"/>
                             <constraint firstItem="Cgw-qF-5Iw" firstAttribute="top" secondItem="aIX-fW-9OK" secondAttribute="bottom" constant="6" id="FtP-VB-A8k"/>
+                            <constraint firstItem="Hxl-VS-cR5" firstAttribute="leading" secondItem="o8U-cm-zic" secondAttribute="leading" constant="10" id="HNY-eR-5vJ"/>
                             <constraint firstItem="kcn-aT-KcJ" firstAttribute="top" secondItem="Uc7-PV-oGI" secondAttribute="bottom" id="Oeo-xf-Yxp"/>
+                            <constraint firstItem="Hxl-VS-cR5" firstAttribute="top" secondItem="o8U-cm-zic" secondAttribute="top" id="X2u-bx-Ye9"/>
                             <constraint firstItem="Cgw-qF-5Iw" firstAttribute="top" secondItem="kcn-aT-KcJ" secondAttribute="bottom" id="YaN-e7-ooi"/>
                             <constraint firstItem="Cgw-qF-5Iw" firstAttribute="leading" secondItem="o8U-cm-zic" secondAttribute="leading" constant="10" id="eMH-K3-gql"/>
                             <constraint firstItem="MmC-QM-vRn" firstAttribute="trailing" secondItem="o8U-cm-zic" secondAttribute="trailing" id="hPm-h4-1PR"/>
@@ -125,6 +154,7 @@
                             <constraint firstItem="STG-7R-bFC" firstAttribute="leading" secondItem="o8U-cm-zic" secondAttribute="leading" id="hgz-OK-Wjq"/>
                             <constraint firstItem="kcn-aT-KcJ" firstAttribute="leading" secondItem="o8U-cm-zic" secondAttribute="leading" constant="10" id="hyt-jl-ArU"/>
                             <constraint firstItem="aIX-fW-9OK" firstAttribute="top" secondItem="Uc7-PV-oGI" secondAttribute="bottom" constant="6" id="i0x-kp-CgN"/>
+                            <constraint firstItem="Hxl-VS-cR5" firstAttribute="trailing" secondItem="o8U-cm-zic" secondAttribute="trailing" id="ick-G3-7Sf"/>
                             <constraint firstItem="jm9-Cg-i28" firstAttribute="trailing" secondItem="o8U-cm-zic" secondAttribute="trailing" id="op0-9f-MiL"/>
                             <constraint firstItem="kcn-aT-KcJ" firstAttribute="trailing" secondItem="o8U-cm-zic" secondAttribute="trailing" id="sbH-if-ME5"/>
                             <constraint firstItem="aIX-fW-9OK" firstAttribute="trailing" secondItem="o8U-cm-zic" secondAttribute="trailing" id="uXC-1v-ZCM"/>
@@ -132,6 +162,7 @@
                         <viewLayoutGuide key="safeArea" id="o8U-cm-zic"/>
                     </view>
                     <connections>
+                        <outlet property="pickerView" destination="STG-7R-bFC" id="KS3-OC-hQj"/>
                         <segue destination="8uz-Yp-9xB" kind="show" identifier="goToReminder" id="5pP-XK-aPI"/>
                     </connections>
                 </viewController>
