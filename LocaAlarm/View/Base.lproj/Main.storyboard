@@ -161,6 +161,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="o8U-cm-zic"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="pickerView" destination="STG-7R-bFC" id="KS3-OC-hQj"/>
                         <segue destination="8uz-Yp-9xB" kind="show" identifier="goToReminder" id="5pP-XK-aPI"/>
@@ -180,6 +182,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="nJA-OV-wbD"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Reminder" id="XkJ-PC-BMP">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="jdC-5t-hxd">
+                            <connections>
+                                <action selector="saveButtonPressed:" destination="8uz-Yp-9xB" id="oux-vD-mP3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="saveButton" destination="jdC-5t-hxd" id="FCM-BT-ioK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vcg-KH-Cus" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

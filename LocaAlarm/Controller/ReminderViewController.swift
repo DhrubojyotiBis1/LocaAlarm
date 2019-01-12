@@ -11,6 +11,7 @@ import UIKit
 
 class ReminderViewController: UIViewController {
 
+    @IBOutlet weak var saveButton: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,5 +20,7 @@ class ReminderViewController: UIViewController {
     }
     
     
-
+    @IBAction func saveButtonPressed(_ sender: Any) {
+    }
+    
 }

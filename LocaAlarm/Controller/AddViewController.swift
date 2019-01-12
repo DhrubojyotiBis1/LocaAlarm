@@ -25,7 +25,6 @@ class AddViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewData
         //Declear your Delegate and dataSource here:
         pickerView.delegate = self
         pickerView.dataSource = self
-        
         //performSegue(withIdentifier: "goToReminder", sender: self)
     }
     
@@ -47,7 +46,7 @@ class AddViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewData
         
     }
     
-    //MARK:-  Buttons Clicked operation here :
+    //MARK:-  Buttons Clicked operations here :
     
     @IBAction func reminderClicked(_ sender: Any) {
         
@@ -68,9 +67,19 @@ class AddViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewData
     }
     
     
+    
+    func findLocation(){
+        //TODO: Getting the location
+    }
+    
+    
      // MARK: - Prepare for segue here :
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
     }
+    
+    
+    //MARK:- protocol to get the data from the ReminderVC here :
+    
 
 }

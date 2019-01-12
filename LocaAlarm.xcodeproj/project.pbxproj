@@ -16,6 +16,8 @@
 		6F1C387121E91222006E2024 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F1C386F21E91222006E2024 /* LaunchScreen.storyboard */; };
 		6F1C387C21E91438006E2024 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1C387B21E91438006E2024 /* AddViewController.swift */; };
 		6F1C387E21E9144B006E2024 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1C387D21E9144B006E2024 /* ReminderViewController.swift */; };
+		6F1F74D721E9DBBB005FBC80 /* CustumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1F74D521E9DBBB005FBC80 /* CustumTableViewCell.swift */; };
+		6F1F74D821E9DBBB005FBC80 /* CustumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F1F74D621E9DBBB005FBC80 /* CustumTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		6F1C387221E91222006E2024 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F1C387B21E91438006E2024 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		6F1C387D21E9144B006E2024 /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
+		6F1F74D521E9DBBB005FBC80 /* CustumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustumTableViewCell.swift; sourceTree = "<group>"; };
+		6F1F74D621E9DBBB005FBC80 /* CustumTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustumTableViewCell.xib; sourceTree = "<group>"; };
 		8E0BD219F187730DE60420A1 /* Pods_LocaAlarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocaAlarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC068B18AD37F42CD3F67DFC /* Pods-LocaAlarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocaAlarm.release.xcconfig"; path = "Pods/Target Support Files/Pods-LocaAlarm/Pods-LocaAlarm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +79,7 @@
 		6F1C386521E91221006E2024 /* LocaAlarm */ = {
 			isa = PBXGroup;
 			children = (
+				6F1F74D021E9DB22005FBC80 /* CustumCell */,
 				6F1C387A21E912C9006E2024 /* Model */,
 				6F1C387921E912B8006E2024 /* Controller */,
 				6F1C387821E91291006E2024 /* View */,
@@ -110,6 +115,15 @@
 				6F118ABD21E93D0100B9F2CB /* pickerData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		6F1F74D021E9DB22005FBC80 /* CustumCell */ = {
+			isa = PBXGroup;
+			children = (
+				6F1F74D521E9DBBB005FBC80 /* CustumTableViewCell.swift */,
+				6F1F74D621E9DBBB005FBC80 /* CustumTableViewCell.xib */,
+			);
+			path = CustumCell;
 			sourceTree = "<group>";
 		};
 		8CCE6A0ED06A7C513A6E044B /* Pods */ = {
@@ -181,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F1F74D821E9DBBB005FBC80 /* CustumTableViewCell.xib in Resources */,
 				6F1C387121E91222006E2024 /* LaunchScreen.storyboard in Resources */,
 				6F1C386E21E91222006E2024 /* Assets.xcassets in Resources */,
 				6F1C386C21E91221006E2024 /* Main.storyboard in Resources */,
@@ -245,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F1F74D721E9DBBB005FBC80 /* CustumTableViewCell.swift in Sources */,
 				6F1C387E21E9144B006E2024 /* ReminderViewController.swift in Sources */,
 				6F118ABE21E93D0100B9F2CB /* pickerData.swift in Sources */,
 				6F1C386921E91221006E2024 /* ViewController.swift in Sources */,
