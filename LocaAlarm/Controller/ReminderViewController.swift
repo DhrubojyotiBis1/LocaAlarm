@@ -11,6 +11,9 @@ import UIKit
 
 class ReminderViewController: UIViewController {
 
+    
+    //TODO: Create the instance variable here:
+
     @IBOutlet weak var saveButton: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,8 +22,10 @@ class ReminderViewController: UIViewController {
         print("ReminderViewController")
     }
     
-    
+    //MARK: - Save button pressed opration here :
     @IBAction func saveButtonPressed(_ sender: Any) {
+        
+        //TODO: distroy the view add send the reminder to the AddVC
     }
     
 }

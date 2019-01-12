@@ -18,6 +18,7 @@
 		6F1C387E21E9144B006E2024 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1C387D21E9144B006E2024 /* ReminderViewController.swift */; };
 		6F1F74D721E9DBBB005FBC80 /* CustumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1F74D521E9DBBB005FBC80 /* CustumTableViewCell.swift */; };
 		6F1F74D821E9DBBB005FBC80 /* CustumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F1F74D621E9DBBB005FBC80 /* CustumTableViewCell.xib */; };
+		6F1F74DA21E9E6F8005FBC80 /* AlarmSaved.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F1F74D921E9E6F8005FBC80 /* AlarmSaved.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		6F1C387D21E9144B006E2024 /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
 		6F1F74D521E9DBBB005FBC80 /* CustumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustumTableViewCell.swift; sourceTree = "<group>"; };
 		6F1F74D621E9DBBB005FBC80 /* CustumTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustumTableViewCell.xib; sourceTree = "<group>"; };
+		6F1F74D921E9E6F8005FBC80 /* AlarmSaved.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSaved.swift; sourceTree = "<group>"; };
 		8E0BD219F187730DE60420A1 /* Pods_LocaAlarm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocaAlarm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC068B18AD37F42CD3F67DFC /* Pods-LocaAlarm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocaAlarm.release.xcconfig"; path = "Pods/Target Support Files/Pods-LocaAlarm/Pods-LocaAlarm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				6F118ABD21E93D0100B9F2CB /* pickerData.swift */,
+				6F1F74D921E9E6F8005FBC80 /* AlarmSaved.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				6F1C386921E91221006E2024 /* ViewController.swift in Sources */,
 				6F1C386721E91221006E2024 /* AppDelegate.swift in Sources */,
 				6F1C387C21E91438006E2024 /* AddViewController.swift in Sources */,
+				6F1F74DA21E9E6F8005FBC80 /* AlarmSaved.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
