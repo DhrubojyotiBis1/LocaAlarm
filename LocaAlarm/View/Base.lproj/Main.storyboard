@@ -70,7 +70,7 @@
                                     <action selector="reminderClicked:" destination="809-Ar-SpE" eventType="touchUpInside" id="xst-Zj-4Dg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcn-aT-KcJ">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcn-aT-KcJ">
                                 <rect key="frame" x="10" y="313" width="365" height="33"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <state key="normal" title="Use Current Location">
@@ -91,7 +91,7 @@
                                     <action selector="useCurrentLocationClicked:" destination="809-Ar-SpE" eventType="touchUpInside" id="1Od-Aa-uCc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cgw-qF-5Iw">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cgw-qF-5Iw">
                                 <rect key="frame" x="10" y="346" width="365" height="33"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <state key="normal" title="Set Location">
@@ -132,6 +132,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your adress" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNB-0A-DM9">
+                                <rect key="frame" x="10" y="379" width="365" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -142,12 +147,14 @@
                             <constraint firstItem="Uc7-PV-oGI" firstAttribute="trailing" secondItem="o8U-cm-zic" secondAttribute="trailing" id="7wS-pM-cOJ"/>
                             <constraint firstItem="Uc7-PV-oGI" firstAttribute="top" secondItem="STG-7R-bFC" secondAttribute="bottom" id="8QY-ro-vhA"/>
                             <constraint firstItem="jm9-Cg-i28" firstAttribute="top" secondItem="STG-7R-bFC" secondAttribute="bottom" constant="6" id="91i-Um-uYn"/>
+                            <constraint firstItem="zNB-0A-DM9" firstAttribute="leading" secondItem="o8U-cm-zic" secondAttribute="leading" constant="10" id="A60-NU-Y71"/>
                             <constraint firstItem="kcn-aT-KcJ" firstAttribute="top" secondItem="jm9-Cg-i28" secondAttribute="bottom" constant="6" id="AQe-aJ-5On"/>
                             <constraint firstItem="Cgw-qF-5Iw" firstAttribute="top" secondItem="aIX-fW-9OK" secondAttribute="bottom" constant="6" id="FtP-VB-A8k"/>
                             <constraint firstItem="Hxl-VS-cR5" firstAttribute="leading" secondItem="o8U-cm-zic" secondAttribute="leading" constant="10" id="HNY-eR-5vJ"/>
                             <constraint firstItem="kcn-aT-KcJ" firstAttribute="top" secondItem="Uc7-PV-oGI" secondAttribute="bottom" id="Oeo-xf-Yxp"/>
                             <constraint firstItem="Hxl-VS-cR5" firstAttribute="top" secondItem="o8U-cm-zic" secondAttribute="top" id="X2u-bx-Ye9"/>
                             <constraint firstItem="Cgw-qF-5Iw" firstAttribute="top" secondItem="kcn-aT-KcJ" secondAttribute="bottom" id="YaN-e7-ooi"/>
+                            <constraint firstItem="zNB-0A-DM9" firstAttribute="top" secondItem="Cgw-qF-5Iw" secondAttribute="bottom" id="YgX-Lk-MeX"/>
                             <constraint firstItem="Cgw-qF-5Iw" firstAttribute="leading" secondItem="o8U-cm-zic" secondAttribute="leading" constant="10" id="eMH-K3-gql"/>
                             <constraint firstItem="MmC-QM-vRn" firstAttribute="trailing" secondItem="o8U-cm-zic" secondAttribute="trailing" id="hPm-h4-1PR"/>
                             <constraint firstItem="Uc7-PV-oGI" firstAttribute="leading" secondItem="o8U-cm-zic" secondAttribute="leading" constant="10" id="hci-TU-BsF"/>
@@ -157,13 +164,22 @@
                             <constraint firstItem="Hxl-VS-cR5" firstAttribute="trailing" secondItem="o8U-cm-zic" secondAttribute="trailing" id="ick-G3-7Sf"/>
                             <constraint firstItem="jm9-Cg-i28" firstAttribute="trailing" secondItem="o8U-cm-zic" secondAttribute="trailing" id="op0-9f-MiL"/>
                             <constraint firstItem="kcn-aT-KcJ" firstAttribute="trailing" secondItem="o8U-cm-zic" secondAttribute="trailing" id="sbH-if-ME5"/>
+                            <constraint firstItem="zNB-0A-DM9" firstAttribute="trailing" secondItem="o8U-cm-zic" secondAttribute="trailing" id="tfi-sK-aZC"/>
                             <constraint firstItem="aIX-fW-9OK" firstAttribute="trailing" secondItem="o8U-cm-zic" secondAttribute="trailing" id="uXC-1v-ZCM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="o8U-cm-zic"/>
                     </view>
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Alarm" id="mSz-LO-p86">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="ezM-Wz-JYS">
+                            <connections>
+                                <action selector="doneButtonClicked:" destination="809-Ar-SpE" id="eX5-QU-Dsb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="adressText" destination="zNB-0A-DM9" id="7Os-XP-MTM"/>
                         <outlet property="pickerView" destination="STG-7R-bFC" id="KS3-OC-hQj"/>
                         <segue destination="8uz-Yp-9xB" kind="show" identifier="goToReminder" id="5pP-XK-aPI"/>
                     </connections>
@@ -179,23 +195,37 @@
                     <view key="view" contentMode="scaleToFill" id="ypk-fC-Sii">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Reminder" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="16D-Ae-VBd">
+                                <rect key="frame" x="0.0" y="99" width="375" height="30"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="16D-Ae-VBd" firstAttribute="top" secondItem="nJA-OV-wbD" secondAttribute="top" constant="35" id="Ean-gg-01I"/>
+                            <constraint firstItem="16D-Ae-VBd" firstAttribute="leading" secondItem="nJA-OV-wbD" secondAttribute="leading" id="ic6-9D-Y3z"/>
+                            <constraint firstItem="16D-Ae-VBd" firstAttribute="trailing" secondItem="nJA-OV-wbD" secondAttribute="trailing" id="pce-b1-MkU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="nJA-OV-wbD"/>
                     </view>
                     <navigationItem key="navigationItem" title="Reminder" id="XkJ-PC-BMP">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="jdC-5t-hxd">
                             <connections>
-                                <action selector="saveButtonPressed:" destination="8uz-Yp-9xB" id="oux-vD-mP3"/>
+                                <action selector="saveButtonPressed:" destination="8uz-Yp-9xB" id="9Gf-Ay-Q2r"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="saveButton" destination="jdC-5t-hxd" id="FCM-BT-ioK"/>
+                        <outlet property="reminderText" destination="16D-Ae-VBd" id="wrd-Oi-d1E"/>
+                        <outlet property="saveButton" destination="jdC-5t-hxd" id="330-bN-TOk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vcg-KH-Cus" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2574" y="123"/>
+            <point key="canvasLocation" x="2573.5999999999999" y="122.78860569715144"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VcZ-tV-Hjq">
