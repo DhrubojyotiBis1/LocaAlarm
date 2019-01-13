@@ -7,11 +7,15 @@
 //
 
 import UIKit
+import CoreLocation
 
-class ViewController: UIViewController{
-    
-    
+class ViewController: UIViewController,AddDelegate{
+
     //MARK:- Declear the instance varible here
+    var adress = ""
+    var longitude = CLLocationDegrees()
+    var latitude = CLLocationDegrees()
+    var reminder = ""
     //TODO: Array of object of AlarmSaved class
     
     //MARK:- Event functions here :
@@ -43,15 +47,28 @@ class ViewController: UIViewController{
     }
     
     @IBAction func editPressed(_ sender: UIBarButtonItem) {
+        print("\(adress) \(reminder) \(longitude) \(latitude)")
+    }
+    
+    //MARK: - prepare for segue to create the object of AddVC here :
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToAlarm"{
+            let alarm = segue.destination as! AddViewController
+            alarm.delegate = self
+        }
     }
     
     
     
-    //MARK: - Protocol to get the data passed from AddVC here :
-    
-    //TODO: Inside the protocol finction create an object of AlarmSaved and save the data in it and the append it to the array of AlarmSaved object
+    //MARK: - Protocol function here :
     
     
-    
+    func reciveInformationaAbout(adress: String, latitude: CLLocationDegrees, longitude: CLLocationDegrees , reminder : String) {
+     //TODO: Inside the protocol finction create an object of AlarmSaved and save the data in it and the append it to the array of AlarmSaved object
+        self.reminder = reminder
+        self.longitude = longitude
+        self.latitude = latitude
+        self.adress = adress
+    }
 }
 

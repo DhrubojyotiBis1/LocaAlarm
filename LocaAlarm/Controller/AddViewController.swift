@@ -10,17 +10,24 @@ import UIKit
 import LocationPicker
 import CoreLocation
 
+protocol AddDelegate {
+    func reciveInformationaAbout(adress : String ,latitude : CLLocationDegrees ,longitude : CLLocationDegrees, reminder : String)
+}
+
 class AddViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource,CLLocationManagerDelegate,ReminderDelegate{
 
     
 
     //TODO: Declear your instant variable here :
+    var delegate : AddDelegate?
     @IBOutlet weak var adressText: UILabel!
+    @IBOutlet weak var loading: UIActivityIndicatorView!
     let pickerData = pickerdata()
-    var coordinate : CLLocationCoordinate2D?
+    lazy var geocoder = CLGeocoder()
     var adress = ""
+    var latitude = CLLocationDegrees()
+    var longitude = CLLocationDegrees()
     let loctionManager = CLLocationManager()
-    let locationPicker = LocationPickerViewController()
     var reminder = ""
     @IBOutlet weak var pickerView: UIPickerView!
     
@@ -31,10 +38,17 @@ class AddViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataS
 
         // Do any additional setup after loading the view.
         
-        //Declear your Delegate and dataSource here:
+        //TODO: Declear your Delegate and dataSource here:
         pickerView.delegate = self
         pickerView.dataSource = self
+        loctionManager.delegate = self
+        
+        //TODO: Dothe setup of the app here:
+        loctionManager.desiredAccuracy = kCLLocationAccuracyBest
+        loctionManager.requestAlwaysAuthorization()
+        loading.isHidden = true
     }
+    
     
     
     //MARK:-  pickerView operation here :
@@ -63,64 +77,112 @@ class AddViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataS
     }
     @IBAction func useCurrentLocationClicked(_ sender: Any) {
         
-        //TODO: Use the locationPicker cocoaPod to get the current location here:
-        
+        //TODO: Use the CoreLocation to get the current location here:
+        loctionManager.startUpdatingLocation()
+        adressText.isHidden = true
+        loading.isHidden = false
+        loading.startAnimating()
     }
     
     @IBAction func setLocationClicked(_ sender: UIButton) {
         //TODO: Use the locationPicker cocoaPod to let the user select prefered location  here:
+        //findLocation(tag: sender.tag)
         findLocation(tag: sender.tag)
     }
     
     
     
     @IBAction func doneButtonClicked(_ sender: Any) {
-        //TODO: perform segue to go to ViewController and send data backword
-        //TODO: Dismiss the VC
+        if adress != ""{
+            //TODO:  send data backword
+            delegate?.reciveInformationaAbout(adress: adress, latitude: latitude, longitude: longitude, reminder: reminder)
+           //TODO: Dismiss the VC
+            self.navigationController?.popViewController(animated: true)
+        }
     }
+    
+    //MARK:- Getting the current location here :
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        //TODO: Getting  user location
+        let location = locations[locations.count - 1]
+        
+        if location.horizontalAccuracy > 0{
+            loctionManager.stopUpdatingLocation()
+            self.latitude =  location.coordinate.latitude
+            self.longitude = location.coordinate.longitude
+            let location = CLLocation(latitude:self.latitude, longitude: self.longitude)
+
+            // Geocode Location
+            geocoder.reverseGeocodeLocation(location) { (placemarks, error) in
+                // Process Response
+                self.processResponse(withPlacemarks: placemarks, error: error)
+                self.updateUi()
+            }
+            
+        }
+    }
+    private func processResponse(withPlacemarks placemarks: [CLPlacemark]?, error: Error?) {
+        //TODO: Getting address
+        if let error = error {
+            print("Unable to Reverse Geocode Location (\(error))")
+            adress = "Unable to Reverse Geocode Location"
+        } else {
+            if let placemarks = placemarks, let placemark = placemarks.first {
+                adress = placemark.compactAddress!
+            } else {
+                adress = "No Matching Addresses Found"
+            }
+        }
+    }
+    
+    
+    
+    
     
     //MARK: - function to get the loctation when Button is pressed here :
     func findLocation(tag :  Int){
+        let locationPicker = LocationPickerViewController()
         if tag == 1{
             //TODO: Getting the location
-            
+
             // button placed on right bottom corner
             locationPicker.showCurrentLocationButton = true // default: true
-            
+
             // default: navigation bar's `barTintColor` or `.whiteColor()`
             locationPicker.currentLocationButtonBackground = .orange
-            
+
             // ignored if initial location is given, shows that location instead
             locationPicker.showCurrentLocationInitially = true // default: true
-            
+
             locationPicker.mapType = .standard // default: .Hybrid
-            
+
             // for searching, see `MKLocalSearchRequest`'s `region` property
             locationPicker.useCurrentLocationAsHint = true // default: false
-            
+
             locationPicker.searchBarPlaceholder = "Search places" // default: "Search or enter an address"
-            
+
             locationPicker.searchHistoryLabel = "Previously searched" // default: "Search History"
-            
+
             // optional region distance to be used for creation region when user selects place from search results
             locationPicker.resultRegionDistance = 500 // default: 600
-            
+
             locationPicker.completion = { location in
                 // do some awesome stuff with location
                 self.extractData(adress: (location?.address)!, coordinate: (location?.coordinate)!)
             }
-            
+
             navigationController?.pushViewController(locationPicker, animated: true)
         }else{
-            
-            
-            
+
+
+
         }
     }
     
-    //TODO: Function for extract data
     func extractData(adress : String,coordinate : CLLocationCoordinate2D){
-        self.coordinate = coordinate
+        //TODO: Function for extract data
+        self.longitude = coordinate.longitude
+        self.latitude = coordinate.latitude
         self.adress = adress
         updateUi()
     }
@@ -142,6 +204,14 @@ class AddViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataS
     //MARK: - update UI
     func updateUi(){
         //TODO: Update the UI in the addVC
-        adressText.text = adress
+        loading.isHidden = true
+        loading.stopAnimating()
+        adressText.isHidden = false
+        if adress == ""{
+            adressText.text = "Unable to Reverse Geocode Location"
+        }else{
+            adressText.text = adress
+            print("\(self.longitude) \(self.latitude)")
+        }
     }
 }

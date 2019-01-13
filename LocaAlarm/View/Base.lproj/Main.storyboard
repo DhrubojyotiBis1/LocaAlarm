@@ -137,6 +137,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="f19-Id-XVK">
+                                <rect key="frame" x="38" y="379" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -149,6 +152,7 @@
                             <constraint firstItem="jm9-Cg-i28" firstAttribute="top" secondItem="STG-7R-bFC" secondAttribute="bottom" constant="6" id="91i-Um-uYn"/>
                             <constraint firstItem="zNB-0A-DM9" firstAttribute="leading" secondItem="o8U-cm-zic" secondAttribute="leading" constant="10" id="A60-NU-Y71"/>
                             <constraint firstItem="kcn-aT-KcJ" firstAttribute="top" secondItem="jm9-Cg-i28" secondAttribute="bottom" constant="6" id="AQe-aJ-5On"/>
+                            <constraint firstItem="f19-Id-XVK" firstAttribute="leading" secondItem="o8U-cm-zic" secondAttribute="leading" constant="38" id="EKi-HA-EWQ"/>
                             <constraint firstItem="Cgw-qF-5Iw" firstAttribute="top" secondItem="aIX-fW-9OK" secondAttribute="bottom" constant="6" id="FtP-VB-A8k"/>
                             <constraint firstItem="Hxl-VS-cR5" firstAttribute="leading" secondItem="o8U-cm-zic" secondAttribute="leading" constant="10" id="HNY-eR-5vJ"/>
                             <constraint firstItem="kcn-aT-KcJ" firstAttribute="top" secondItem="Uc7-PV-oGI" secondAttribute="bottom" id="Oeo-xf-Yxp"/>
@@ -164,6 +168,7 @@
                             <constraint firstItem="Hxl-VS-cR5" firstAttribute="trailing" secondItem="o8U-cm-zic" secondAttribute="trailing" id="ick-G3-7Sf"/>
                             <constraint firstItem="jm9-Cg-i28" firstAttribute="trailing" secondItem="o8U-cm-zic" secondAttribute="trailing" id="op0-9f-MiL"/>
                             <constraint firstItem="kcn-aT-KcJ" firstAttribute="trailing" secondItem="o8U-cm-zic" secondAttribute="trailing" id="sbH-if-ME5"/>
+                            <constraint firstItem="f19-Id-XVK" firstAttribute="top" secondItem="Cgw-qF-5Iw" secondAttribute="bottom" id="siK-Y1-MiZ"/>
                             <constraint firstItem="zNB-0A-DM9" firstAttribute="trailing" secondItem="o8U-cm-zic" secondAttribute="trailing" id="tfi-sK-aZC"/>
                             <constraint firstItem="aIX-fW-9OK" firstAttribute="trailing" secondItem="o8U-cm-zic" secondAttribute="trailing" id="uXC-1v-ZCM"/>
                         </constraints>
@@ -180,6 +185,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="adressText" destination="zNB-0A-DM9" id="7Os-XP-MTM"/>
+                        <outlet property="loading" destination="f19-Id-XVK" id="LNy-Io-4kF"/>
                         <outlet property="pickerView" destination="STG-7R-bFC" id="KS3-OC-hQj"/>
                         <segue destination="8uz-Yp-9xB" kind="show" identifier="goToReminder" id="5pP-XK-aPI"/>
                     </connections>
