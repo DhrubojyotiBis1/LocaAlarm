@@ -7,11 +7,13 @@
 //
 
 import Foundation
+import CoreLocation
 
 class AlarmSaved{
-    var latitude:Float = 0.0
-    var longitude:Float = 0.0
+    var latitude = CLLocationDegrees()
+    var longitude = CLLocationDegrees()
     var adress = ""
     var reminder = ""
+    var radius = 0
     var isSet = false
 }

@@ -9,9 +9,10 @@
 import UIKit
 import LocationPicker
 import CoreLocation
+import SVProgressHUD
 
 protocol AddDelegate {
-    func reciveInformationaAbout(adress : String ,latitude : CLLocationDegrees ,longitude : CLLocationDegrees, reminder : String)
+    func reciveInformationaAbout(adress : String ,latitude : CLLocationDegrees ,longitude : CLLocationDegrees, reminder : String , radius : Int)
 }
 
 class AddViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataSource,CLLocationManagerDelegate,ReminderDelegate{
@@ -28,6 +29,7 @@ class AddViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataS
     var latitude = CLLocationDegrees()
     var longitude = CLLocationDegrees()
     let loctionManager = CLLocationManager()
+    var radiusSelected = 0
     var reminder = ""
     @IBOutlet weak var pickerView: UIPickerView!
     
@@ -44,7 +46,7 @@ class AddViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataS
         loctionManager.delegate = self
         
         //TODO: Dothe setup of the app here:
-        loctionManager.desiredAccuracy = kCLLocationAccuracyBest
+        loctionManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
         loctionManager.requestAlwaysAuthorization()
         loading.isHidden = true
     }
@@ -65,7 +67,7 @@ class AddViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataS
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        
+        radiusSelected = Int(pickerData.areaRange[row])!
     }
     
     //MARK:-  Buttons Clicked operations here :
@@ -86,8 +88,7 @@ class AddViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataS
     
     @IBAction func setLocationClicked(_ sender: UIButton) {
         //TODO: Use the locationPicker cocoaPod to let the user select prefered location  here:
-        //findLocation(tag: sender.tag)
-        findLocation(tag: sender.tag)
+        findLocation()
     }
     
     
@@ -95,7 +96,7 @@ class AddViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataS
     @IBAction func doneButtonClicked(_ sender: Any) {
         if adress != ""{
             //TODO:  send data backword
-            delegate?.reciveInformationaAbout(adress: adress, latitude: latitude, longitude: longitude, reminder: reminder)
+            delegate?.reciveInformationaAbout(adress: adress, latitude: latitude, longitude: longitude, reminder: reminder , radius : radiusSelected)
            //TODO: Dismiss the VC
             self.navigationController?.popViewController(animated: true)
         }
@@ -140,9 +141,9 @@ class AddViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataS
     
     
     //MARK: - function to get the loctation when Button is pressed here :
-    func findLocation(tag :  Int){
+    func findLocation(){
         let locationPicker = LocationPickerViewController()
-        if tag == 1{
+
             //TODO: Getting the location
 
             // button placed on right bottom corner
@@ -172,11 +173,6 @@ class AddViewController: UIViewController,UIPickerViewDelegate,UIPickerViewDataS
             }
 
             navigationController?.pushViewController(locationPicker, animated: true)
-        }else{
-
-
-
-        }
     }
     
     func extractData(adress : String,coordinate : CLLocationCoordinate2D){

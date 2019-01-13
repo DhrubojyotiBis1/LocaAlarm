@@ -13,6 +13,7 @@ class CustumTableViewCell: UITableViewCell {
     //TODO: Create your instance variable here :
     @IBOutlet weak var onOffSwitch: UISwitch!
     @IBOutlet weak var adressText: UILabel!
+    @IBOutlet weak var reminder: UILabel!
     
     
     override func awakeFromNib() {
