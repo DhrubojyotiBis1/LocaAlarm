@@ -15,11 +15,6 @@ class ViewController: UIViewController,AddDelegate,UITableViewDelegate,UITableVi
     //MARK:- Declear the instance varible here
     var alarm = [AlarmSaved]()
      @IBOutlet weak var tableView: UITableView!
-    var adress = ""
-    var longitude = CLLocationDegrees()
-    var latitude = CLLocationDegrees()
-    var reminder = ""
-    var radius = 0
     //TODO: Array of object of AlarmSaved class
     
     //MARK:- Event functions here :
@@ -32,8 +27,7 @@ class ViewController: UIViewController,AddDelegate,UITableViewDelegate,UITableVi
         tableView.register(UINib(nibName: "CustumTableViewCell", bundle: nil), forCellReuseIdentifier: "CustumCell")
         
     }
-
-  
+    
     //MARK: - TableView functions here:
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -43,9 +37,10 @@ class ViewController: UIViewController,AddDelegate,UITableViewDelegate,UITableVi
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustumCell", for: indexPath) as! CustumTableViewCell
-        
+        cell.onOffSwitch.accessibilityIdentifier = alarm[indexPath.row].identifire
         cell.adressText.text = alarm[indexPath.row].adress
         cell.reminder.text = alarm[indexPath.row].reminder
+        cell.onOffSwitch.accessibilityIdentifier = alarm[indexPath.row].identifire
         return cell
     }
     
@@ -57,16 +52,16 @@ class ViewController: UIViewController,AddDelegate,UITableViewDelegate,UITableVi
     
     //MARK: - Opration to set notification here :
     
-    func setNotification(){
-        let center = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-        let region = CLCircularRegion(center: center, radius: CLLocationDistance(self.radius), identifier: "Headquarters")
+    func setNotification(identifire : Int){
+        let center = CLLocationCoordinate2D(latitude: self.alarm[identifire].latitude, longitude: self.alarm[identifire].longitude)
+        let region = CLCircularRegion(center: center, radius: CLLocationDistance(self.alarm[identifire].radius), identifier: "Headquarters")
         region.notifyOnEntry = true
         region.notifyOnExit = true
         
-        let locationNotification = DLNotification(identifier: "LocationNotification", alertTitle: "You have reached \(self.adress)", alertBody: self.reminder , region: region )
+        let locationNotification = DLNotification(identifier: "\(identifire)" , alertTitle: "You have reached \(self.alarm[identifire].adress)", alertBody: self.alarm[identifire].reminder , region: region )
         
         let scheduler = DLNotificationScheduler()
-        scheduler.scheduleNotification(notification: locationNotification)
+        alarm[identifire].identifire = scheduler.scheduleNotification(notification: locationNotification)!
     }
     
     
@@ -101,15 +96,8 @@ class ViewController: UIViewController,AddDelegate,UITableViewDelegate,UITableVi
         alarm.latitude = latitude
         alarm.longitude = longitude
         alarm.radius = radius
-        alarm.isSet = true
         self.alarm.append(alarm)
-        //TODO: used for setting reminder
-        self.reminder = reminder
-        self.longitude = longitude
-        self.latitude = latitude
-        self.adress = adress
-        self.radius = radius
-        self.setNotification()
+        self.setNotification(identifire: (self.alarm.count  - 1 ))
         tableView.reloadData()
     }
 }

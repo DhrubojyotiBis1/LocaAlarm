@@ -15,5 +15,5 @@ class AlarmSaved{
     var adress = ""
     var reminder = ""
     var radius = 0
-    var isSet = false
+    var identifire = ""
 }

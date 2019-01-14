@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 class CustumTableViewCell: UITableViewCell {
 
@@ -14,6 +15,8 @@ class CustumTableViewCell: UITableViewCell {
     @IBOutlet weak var onOffSwitch: UISwitch!
     @IBOutlet weak var adressText: UILabel!
     @IBOutlet weak var reminder: UILabel!
+    
+    
     
     
     override func awakeFromNib() {
@@ -30,5 +33,11 @@ class CustumTableViewCell: UITableViewCell {
     //MARK: - On Off switch operation here :
     @IBAction func onOffSwitchPressed(_ sender: UISwitch) {
         //TODO: If change the Switch state when pressed
+        if onOffSwitch.isOn == false{
+            UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [onOffSwitch.accessibilityIdentifier!])
+        }else{
+            
+            
+        }
     }
 }
